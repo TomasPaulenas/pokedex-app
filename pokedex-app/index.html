@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     <link rel="icon" type="image/svg+xml" href="img/16025435.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    
+    <div id="app">
+    
+      <form id="search-form">
+        <input 
+          id="search-input" 
+          type="text" 
+          placeholder="Enter Pokémon name or ID" 
+        />
+        <button type="submit">Search</button>
+      </form>
+
+  
+      <p id="loading" hidden>Loading...</p>
+      <p id="error" hidden></p>
+
+
+      <div id="pokemon" hidden>
+        <h2>
+          <span id="pokemon-name"></span>
+          <span id="pokemon-id"></span>
+        </h2>
+        <img id="pokemon-img" alt="pokemon image" />
+
+        <div id="pokemon-types"></div>
+        <div id="pokemon-stats"></div>
+      </div>
+    </div>
+
+        <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
